@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function(){
             return "Projetos"; 
         }
     }
+    getTextoAtual()
     var contadorDeLetras = 0
     function escreverTexto(){
         if (contadorDeLetras <  getTextoAtual().length) {

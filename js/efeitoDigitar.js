@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function(){
             return "Projetos";
         } else if (window.location.href.includes("skills.html")) {
             return "Habilidades"; 
-        } else (window.location.href.includes("index.html")) {
+        } else  {
             return "Euderlan Freire"; 
         }
     }

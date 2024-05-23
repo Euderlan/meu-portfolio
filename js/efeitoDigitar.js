@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function(){
             setTimeout(escreverTexto, atraso)
         }
     }
+    escreverTexto()
     function getTextoAtual() {
         
         if (window.location.href.includes("index.html")) {
@@ -20,5 +21,5 @@ document.addEventListener("DOMContentLoaded", function(){
             return "Projetos"; 
         }
     }
-    escreverTexto()
+    
 })

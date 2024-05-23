@@ -18,8 +18,6 @@ document.addEventListener("DOMContentLoaded", function(){
             return "Habilidades"; 
         } else if (window.location.href.includes("project.html")) {
             return "Projetos"; 
-        }else {
-            return "Texto padrão";
         }
     }
     escreverTexto()

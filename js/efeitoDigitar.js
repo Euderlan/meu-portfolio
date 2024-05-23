@@ -4,12 +4,12 @@ document.addEventListener("DOMContentLoaded", function(){
 
     function getTextoAtual() {
         
-        if (window.location.href.includes("index.html")) {
-            return "Euderlan Freire";
+        if (window.location.href.includes("project.html")) {
+            return "Projetos";
         } else if (window.location.href.includes("skills.html")) {
             return "Habilidades"; 
-        } else if (window.location.href.includes("project.html")) {
-            return "Projetos"; 
+        } else if (window.location.href.includes("index.html")) {
+            return "Euderlan Freire"; 
         }
     }
     getTextoAtual()

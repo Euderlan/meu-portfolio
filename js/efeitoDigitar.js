@@ -2,15 +2,6 @@ document.addEventListener("DOMContentLoaded", function(){
     var atraso = 200
     var textoElemento = document.querySelector(".titulo-destaque")
 
-    var contadorDeLetras = 0
-    function escreverTexto(){
-        if (contadorDeLetras <  getTextoAtual().length) {
-            textoElemento.textContent +=  getTextoAtual().charAt(contadorDeLetras)
-            contadorDeLetras++
-            setTimeout(escreverTexto, atraso)
-        }
-    }
-    escreverTexto()
     function getTextoAtual() {
         
         if (window.location.href.includes("index.html")) {
@@ -21,5 +12,15 @@ document.addEventListener("DOMContentLoaded", function(){
             return "Projetos"; 
         }
     }
+    var contadorDeLetras = 0
+    function escreverTexto(){
+        if (contadorDeLetras <  getTextoAtual().length) {
+            textoElemento.textContent +=  getTextoAtual().charAt(contadorDeLetras)
+            contadorDeLetras++
+            setTimeout(escreverTexto, atraso)
+        }
+    }
+    escreverTexto()
+  
     
 })
